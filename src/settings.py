@@ -26,11 +26,11 @@ presets = Settings(
     datadir=root / "data/raw",
     testurl=cast(
         HttpUrl,
-        "https://archive.ics.uci.edu/ml/machine-learning-databases/00195/Test_Arabic_Digit.txt",  # noqa N501
+        "https://raw.githubusercontent.com/raoulg/data_assets/main/ArabicTest.txt",
     ),
     trainurl=cast(
         HttpUrl,
-        "https://archive.ics.uci.edu/ml/machine-learning-databases/00195/Train_Arabic_Digit.txt",  # noqa N501
+        "https://raw.githubusercontent.com/raoulg/data_assets/main/ArabicTrain.txt",
     ),
     testfile=Path("ArabicTest.txt"),
     trainfile=Path("ArabicTrain.txt"),

@@ -98,7 +98,7 @@ class ArabicDataset(BaseDataset):
         # there are 330 males and 330 females, 10 times.
         g = np.tile(np.repeat(["m", "f"], blocksize // 2), 10)
         labels = ["".join([str(a), str(b)]) for a, b in zip(d, g)]
-        assert len(labels) == len(self.data)
+        assert len(labels) == len(self.data), f"{len(labels)} != {len(self.data)}"
         return labels
 
 
